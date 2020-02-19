@@ -1,0 +1,16 @@
+---
+filetypes:
+  - html
+
+patterns:
+  - <!--
+  - <applet
+  - <embed
+  - <form
+  - <iframe
+  - <input
+  - <object
+  - <script
+  - <select
+  - <textarea
+  - <xml

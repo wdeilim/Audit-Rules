@@ -1,0 +1,6 @@
+---
+filetypes:
+  - js
+
+patterns:
+  - \seval\s*\(

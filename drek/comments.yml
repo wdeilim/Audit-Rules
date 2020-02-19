@@ -1,0 +1,12 @@
+---
+filetypes:
+  - all
+
+patterns:
+  - bug
+  - fixme
+  - kludge
+  - nb
+  - note
+  - todo
+  - xxx

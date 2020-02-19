@@ -1,0 +1,6 @@
+# Perl exec signatures
+exec(\s*\(|\s+).*\$.*\)?
+fork(\s*\(|\s+).*\)?
+`.*\$.*`
+system(\s*\(?|\s+)*\$.*\)?
+open(\s*\(?|\s+)*\$.*\)?

@@ -1,0 +1,12 @@
+---
+filetypes:
+  - sql
+
+patterns:
+
+  # possible markup injections
+  - \s<\s*script
+  - \s<\s*iframe
+
+  # possible PHP injections
+  - \s<\?

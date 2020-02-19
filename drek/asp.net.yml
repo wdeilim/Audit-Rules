@@ -1,0 +1,22 @@
+---
+filetypes:
+  - aspx
+
+patterns:
+
+  # file access
+  - \sFileStream\s
+  - \sStreamReader\s
+  - \sStreamWriter\s
+
+  # database access
+  - \sSqlCommand\s
+  - \sSqlDataAdapter\s
+  - \sOleDbCommand\s
+  - \sOdbcCommand\s
+  - \sSqlCeCommand\s
+  - \sOracleCommand\s
+
+  # external processes
+  - \sProcess.Start\s
+  - \sProcessStartInfo\s

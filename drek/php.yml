@@ -1,0 +1,82 @@
+---
+filetypes:
+  - php
+
+patterns:
+
+  # form data
+  - \s\$_FILES
+  - \s\$_GET
+  - \s\$_POST
+  - \s\$_REQUEST
+
+  # globals
+  - \s\$GLOBALS
+  - \s\$_COOKIE
+  - \s\$_SERVER
+  - \s\$_SESSION
+
+  # system commands
+  - `
+  - \sexec\s*\(
+  - \spassthru\s*\(
+  - \sshell_exec\s*\(
+  - \ssystem\s*\(
+
+  # potentially dangerous functions
+  - \screate_function\s*\(
+  - \scurl_exec\s*\(
+  - \scurl_init\s*\(
+  - \seval\s*\(
+  - \sfile\s*\(
+  - \sfile_get_contents\s*\(
+  - \sfopen\s*\(
+  - \sfread\s*\(
+  - \sfsockopen\s*\(
+  - \spfsockopen\s*\(
+  - \spopen\s*\(
+  - \sproc_open\s*\(
+  - \sreadfile\s*\(
+
+  # cryptographic functions
+  - \scrc32\s*\(
+  - \scrypt\s*\(
+  - \sgnupg_\s*\(
+  - \shash\s*\(
+  - \smcrypt_
+  - \smd5\s*\(
+  - \sopenssl_\s*\(
+  - \spassword_hash\s*\(
+  - \spassword_needs_rehash\s*\(
+  - \spassword_verify\s*\(
+  - \ssha1\s*\(
+  - \ssha1_file\s*\(
+
+  # payload obfuscators
+  - \sbase64_decode\s*\(
+  - \sbase64_encode\s*\(
+  - \sbzcompress\s*\(
+  - \sbzdecompress\s*\(
+  - \sgzdeflate\s*\(
+  - \sgzdencode\s*\(
+  - \sgzdinflate\s*\(
+  - \sgzuncompress\s*\(
+  - \szlib_decode\s*\(
+  - \szlib_encode\s*\(
+
+  # misc interesting
+  - \sassert\s*\(
+  - \sgoto
+  - \sinclude\s
+  - \sinclude_once\s
+  - \smail\s*\(
+  - \srequire\s
+  - \srequire_once\s
+
+  # database operations
+  - \smysql_
+  - \smysqli_
+
+  # markup injections
+  - \s<\?=
+  - \secho

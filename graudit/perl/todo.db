@@ -1,0 +1,25 @@
+# Perl signatures
+getc
+readdir(\s+|\s*\().*\$.*
+read(\s+|\s*\().*\$.*
+sysread
+eval.*\$.*
+fctnl
+ioctl
+bind
+setpgrp
+syscall
+connect.*\$.*
+glob(\s+|\s*\().*\$.*
+mkdir(\s+|\s*\().*\$.*
+rmdir(\s+|\s*\().*\$.*
+link(\s+|\s*\().*\$.*
+unlink(\s+|\s*\().*\$.*
+chmod(\s+|\s*\().*\$.*
+chown(\s+|\s*\().*\$.*
+chroot
+symlink
+truncate(\s+|\s*\().*\$.*
+kill.*\$.*
+umask
+->param\s*\(.*\)

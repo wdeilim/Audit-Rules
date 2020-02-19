@@ -1,0 +1,80 @@
+---
+filetypes:
+  - php
+
+patterns:
+
+  # database operations
+  - \s$wpdb
+  - \squery
+  - \sinsert
+  - \supdate
+  - \sprepare
+  - \shide_errors
+    
+  # post-related
+  - \swp_delete_post
+  - \swp_insert_post
+  - \swp_publish_post
+  - \swp_update_post
+
+  # attachment-related
+  - \supdate_attached_file
+  - \swp_insert_attachment
+  - \swp_delete_attachment
+  - \swp_generate_attachment_metadata
+  - \swp_update_attachment_metadata
+
+  # user-related
+  - \sadd_cap
+  - \sadd_role
+  - \sauth_redirect
+  - \semail_exists
+  - \sget_current_user_id
+  - \sget_profile
+  - \sget_super_admins
+  - \sget_userdata
+  - \sget_userdatabylogin
+  - \sget_usernumposts
+  - \sget_users
+  - \sget_users_of_blog
+  - \sis_super_admin
+  - \sis_user_logged_in
+  - \sremove_cap
+  - \sremove_role
+  - \sset_current_user
+  - \suser_can
+  - \suser_pass_ok
+  - \susername_exists
+  - \svalidate_username
+  - \swp_create_user
+  - \swp_delete_user
+  - \swp_get_current_user
+  - \swp_insert_user
+  - \swp_login_form
+  - \swp_logout
+  - \swp_set_current_user
+  - \swp_signon
+  - \swp_update_user
+
+  # "action"-related
+  - \sadd_action
+  - \sdo_action
+  - \sdo_action_ref_array
+  - \sremove_action
+  - \sremove_all_actions
+
+  # plugin-related
+  - \sregister_activation_hook
+  - \sregister_deactivation_hook
+  - \sregister_setting
+  - \sunregister_setting
+  - \smenu_page_url
+
+  # shortcode-related
+  - \sadd_shortcode
+  - \sdo_shortcode
+  - \sdo_shortcode_tag
+  - \sremove_shortcode
+  - \sremove_all_shortcodes
+  - \sstrip_shortcodes

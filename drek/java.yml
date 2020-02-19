@@ -1,0 +1,29 @@
+---
+filetypes:
+  - java
+
+patterns:
+
+  # file access
+  - \snew File
+  - \snew FileInputStream
+  - \snew FileOutputStream
+  - \snew FileReader
+  - \snew FileWriter
+
+  # database access
+  - \sStatement.execute
+  - \sStatement.executeQuery
+  - \screateStatement
+  - \sexecute
+  - \sexecuteQuery
+
+  # external processes
+  - \sProcess
+  - \sRuntime.Exec
+  - \sRuntime.getRuntime
+
+  # keystore/crypto usage
+  - \sKeyStore
+  - \sPrivateKey
+  - \sSamlAuthToken

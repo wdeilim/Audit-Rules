@@ -1,0 +1,157 @@
+---
+filetypes:
+  - c
+
+##
+# The following patterns were taken with gratitude from the following Microsoft
+# research:
+#
+# https://msdn.microsoft.com/en-us/library/bb288454.aspx
+##
+patterns:
+  # string copy functions
+  - StrCpy
+  - StrCpyA
+  - StrCpyN
+  - StrCpyNA
+  - StrCpyNW
+  - StrCpyW
+  - StrNCpy
+  - StrNCpyA
+  - StrNCpyW
+  - _ftcscpy
+  - _mbccpy
+  - _mbscpy
+  - _mbsnbcpy
+  - _mbsncpy
+  - _tccpy
+  - _tcscpy
+  - _tcsncpy
+  - lstrcpy
+  - lstrcpyA
+  - lstrcpyW
+  - lstrcpyn
+  - lstrcpynA
+  - lstrcpynW
+  - strcpy
+  - strcpyA
+  - strcpyW
+  - strcpynA
+  - strncpy
+  - wcscpy
+  - wcsncpy
+
+  # string concatenation functions
+  - StrCat
+  - StrCatA
+  - StrCatBuff
+  - StrCatBuffA
+  - StrCatBuffW
+  - StrCatChainW
+  - StrCatN
+  - StrCatNA
+  - StrCatNW
+  - StrCatW
+  - StrNCat
+  - StrNCatA
+  - StrNCatW
+  - _ftcscat
+  - _mbccat
+  - _mbscat
+  - _mbsnbcat
+  - _mbsncat
+  - _tccat
+  - _tcscat
+  - _tcsncat
+  - lstrcat
+  - lstrcatA
+  - lstrcatW
+  - lstrcatn
+  - lstrcatnA
+  - lstrcatnW
+  - lstrncat
+  - strcat
+  - strcatA
+  - strcatW
+  - strncat
+  - wcscat
+  - wcsncat
+
+  # banned sprintf functions
+  - _stprintf
+  - _vstprintf
+  - sprintf
+  - sprintf
+  - sprintfA
+  - sprintfW
+  - swprintf
+  - vswprintf
+  - wsprintf
+  - wsprintfA
+  - wsprintfW
+  - wvsprintf
+  - wvsprintfA
+  - wvsprintfW
+
+  # banned variable argument sprintf functions
+  - _vstprintf
+  - vsprintf
+  - vswprintf
+  - wvsprintf
+  - wvsprintfA
+  - wvsprintfW
+
+  # banned "n" string copy functions
+  - StrCpyN
+  - StrCpyNA
+  - StrCpyNW
+  - StrNCpy
+  - StrNCpyA
+  - StrNCpyW
+  - _fstrncpy
+  - _mbsnbcpy
+  - _mbsncpy
+  - _tcsncpy
+  - lstrcpyn
+  - lstrcpynA
+  - lstrcpynW
+  - strcpynA
+  - strncpy
+  - wcsncpy
+
+  # banned "n" string concatenation functions
+  - StrCatN
+  - StrCatNA
+  - StrCatNW
+  - StrNCat
+  - StrNCatA
+  - StrNCatW
+  - _fstrncat
+  - _mbsnbcat
+  - _mbsncat
+  - _tcsncat
+  - lstrcatn
+  - lstrcatnA
+  - lstrcatnW
+  - lstrncat
+  - strncat
+  - wcsncat
+
+  # banned gets functions
+  - _getts
+  - _gettws	
+  - gets
+
+  # banned isBad* functions
+  - IsBadCodePtr
+  - IsBadHugeReadPtr
+  - IsBadHugeWritePtr
+  - IsBadReadPtr
+  - IsBadStringPtr
+  - IsBadWritePtr
+
+  # banned memory copy functions
+  - CopyMemory
+  - RtlCopyMemory
+  - memcpy
+  - wmemcpy
