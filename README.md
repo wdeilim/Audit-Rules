@@ -1,6 +1,6 @@
 # Audit Rules
 
-A curated list of audit rules which extract from Souce Code Auditing tools.
+A curated list of audit rules which extract from Source Code Auditing tools.
 
 * Based on `Regex`
     * [graudit](https://github.com/wireghoul/graudit)
